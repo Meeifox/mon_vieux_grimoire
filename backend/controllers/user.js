@@ -7,16 +7,16 @@ exports.login = (req, res, next) => {
   User.findOne({ email: req.body.email })
     .then(user => {
       if (!user) {
-        console.log("Utilisateur non trouvé.");
-        const error = new Error('Utilisateur non trouvé.');
+        console.log("Utilisateur ou Mot de passe incorrect.");
+        const error = new Error('Utilisateur ou Mot de passe incorrect.');
         error.statusCode = 401;
         throw error; // Passe l'erreur à la prochaine fonction middleware
       }
       bcrypt.compare(req.body.password, user.password)
         .then(valid => {
           if (!valid) {
-            console.log("Mot de passe incorrect.");
-            const error = new Error('Mot de passe incorrect.');
+            console.log("Utilisateur ou Mot de passe incorrect.");
+            const error = new Error('Utilisateur ou Mot de passe incorrect.');
             error.statusCode = 401;
             throw error;
           }
