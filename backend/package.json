@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meeifox/mon-vieux-grimoire.git"
+  },
+  "keywords": [
+    "je",
+    "test"
+  ],
+  "author": "npo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meeifox/mon-vieux-grimoire/issues"
+  },
+  "homepage": "https://github.com/Meeifox/mon-vieux-grimoire",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.1.0",
+    "mongoose-unique-validator": "^4.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
