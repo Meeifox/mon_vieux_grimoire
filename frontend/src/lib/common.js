@@ -109,7 +109,7 @@ export async function rateBook(id, userId, rating) {
     return book;
   } catch (e) {
     console.error(e);
-    return e.message;
+    return e.response.data.message;
   }
 }
 
@@ -141,8 +141,8 @@ export async function addBook(data) {
       },
     });
   } catch (err) {
-    console.error(err);
-    return { error: true, message: err.message };
+    console.error(err.response.data.message);
+    return { error: true, message: err.response.data.message };
   }
 }
 
@@ -177,7 +177,7 @@ export async function updateBook(data, id) {
     });
     return newBook;
   } catch (err) {
-    console.error(err);
-    return { error: true, message: err.message };
+    console.error(err.response.data.message);
+    return { error: true, message: err.response.data.message };
   }
 }

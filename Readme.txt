@@ -1,20 +1,19 @@
-Pour démarrer le server backend :
-1. Ouvrir Git Bash (ça ne fonctionne pas avec CMD)  dans le dossier backend
-2. Ecrire : nodemon server
+Pour démarrer le serveur backend :
 
-Pour démarrer le front :
-1. Ouvrir CMD dans le dossier frontend
-2. Ecrire : npm intall puis npm start
+Ouvrez Git Bash (ne fonctionne pas avec CMD) dans le dossier backend.
+Écrivez : npm install et attendez que les dépendances soient installées. Ensuite, démarrez le projet en utilisant la commande : nodemon server.
+Pour démarrer le frontend :
 
+Ouvrez CMD dans le dossier frontend.
+Écrivez : npm install puis npm start.
+Pour tester les fonctionnalités, voici les informations de connexion :
 
-Pour tester les fonctionnalités, voici les logins :
 Utilisateur 1 :
-coucou1@gmail.com
-PSW : coucou1
+Adresse e-mail : coucou1@gmail.com
+Mot de passe : coucou1
 
 Utilisateur 2 :
-coucou2@gmail.com
-PSW : coucou2
+Adresse e-mail : coucou2@gmail.com
+Mot de passe : coucou2
 
-Ou créez vous même votre lien grâce à la fonction s'inscrire
-
+Vous pouvez également créer votre propre compte en utilisant la fonctionnalité "S'inscrire".

@@ -17,9 +17,8 @@
   "author": "npo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Meeifox/mon-vieux-grimoire/issues"
+    "url": "https://github.com/Meeifox/mon_vieux_grimoire/issues"
   },
-  "homepage": "https://github.com/Meeifox/mon-vieux-grimoire",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
@@ -27,7 +26,9 @@
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.3.0",
     "mongoose": "^7.1.0",
-    "mongoose-unique-validator": "^4.0.0"
+    "mongoose-unique-validator": "^4.0.0",
+    "sharp": "^0.32.1",
+    "multer" : "^1.4.5-lts.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",

@@ -28,16 +28,15 @@ exports.postBook = (req, res, next) => {
     book.save().then(
         () => {
             // Si réussi, envoyer une réponse avec un code d'état 201 et un message de succès
-            res.status(201).json({
-                message: 'Livre enregistré avec succès !'
-            });
+            res.status(201).json(
+            { message: 'Livre enregistré avec succès !'});
         }
     ).catch(
         (error) => {
             // Si une erreur se produit, envoyer une réponse avec un code d'état 400 et le message d'erreur
-            res.status(400).json({
-                error: error
-            });
+            res.status(400).json(
+            { error: error }
+            );
         }
     );
 };
